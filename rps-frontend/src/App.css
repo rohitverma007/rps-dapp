@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+.game-container, .login-btn {
+  margin-top: 20px;
+}
+
+.user-info {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-btn:hover {
+  background-color: #45a049;
+}
+
+.login-btn {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #007bb5;
+}
+
+.game-result {
+  margin-top: 20px;
+  color: #333;
+}
