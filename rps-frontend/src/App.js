@@ -41,6 +41,7 @@ function App() {
       const tx = await rpsContract.play({ player_choice: playerChoice });
       const { result } = await tx.signAndSend();
       console.log(result)
+      // 0 = draw, 1 = player win, 2 = contract win
       if (result === 2n) {
         setGameResult(`Contract Won!`);
       } else if (result === 1n) {
