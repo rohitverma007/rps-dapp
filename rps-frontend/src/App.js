@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { isAllowed, setAllowed, getUserInfo } from '@stellar/freighter-api';
-import { Contract, networks } from 'rps-contract-client';
+import { Contract, networks } from 'rps_contract-client';
 import './App.css'; // Ensure this line is uncommented
 
 function App() {
