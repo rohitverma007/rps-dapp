@@ -38,14 +38,16 @@ function App() {
         ...networks.testnet,
         rpcUrl: 'https://soroban-testnet.stellar.org',
       });
-      console.log(rpsContract);
-      console.log(playerChoice);
-      window.yeet = rpsContract;
       const tx = await rpsContract.play({ player_choice: playerChoice });
-      console.log(tx);
       const { result } = await tx.signAndSend();
-      console.log(result);
-      setGameResult(`Result: ${result}`);
+      console.log(result)
+      if (result === 2n) {
+        setGameResult(`Contract Won!`);
+      } else if (result === 1n) {
+        setGameResult(`You Won!`);
+      } else {
+        setGameResult(`Draw!`);
+      }
     } catch (e) {
       console.error(e);
       setGameResult(`Error: ${e.message}`);
